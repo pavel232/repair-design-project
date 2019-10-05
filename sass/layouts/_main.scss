@@ -1,0 +1,12 @@
+.main {
+    width: 100%;
+    height: 1815px;
+    background-color: rgb(87, 87, 87);
+    z-index: 0;
+
+    &__upper-wrapper {
+        height: 200px;
+        width: 200px;
+        background-color: red;
+    }
+}

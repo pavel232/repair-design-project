@@ -1,0 +1,117 @@
+.navbar {
+  display: flex;
+  width: 100%;
+  height: 83px;
+  background-color: #131313;
+  align-items: center; }
+  .navbar__navigation {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 82px;
+    margin-right: 82px; }
+    .navbar__navigation__heading {
+      font-family: Calibri, 'Trebuchet MS', sans-serif;
+      color: #E3B873;
+      font-weight: 600;
+      font-size: 18px; }
+    .navbar__navigation__menu {
+      display: flex;
+      justify-content: space-between; }
+      .navbar__navigation__menu--item {
+        color: white;
+        font-family: Calibri, 'Trebuchet MS', sans-serif;
+        padding-left: 10px;
+        padding-right: 10px;
+        text-decoration: none; }
+        .navbar__navigation__menu--item:hover {
+          color: #E3B873; }
+    .navbar__navigation__phone {
+      display: flex;
+      align-items: center; }
+      .navbar__navigation__phone--number {
+        color: #E3B873;
+        text-decoration: underline;
+        font-family: Calibri, 'Trebuchet MS', sans-serif; }
+      .navbar__navigation__phone--button {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 161px;
+        height: 37px;
+        background-color: #E3B873;
+        border-radius: 2px;
+        margin-left: 20px; }
+        .navbar__navigation__phone--button--text {
+          color: white;
+          font-family: Calibri, 'Trebuchet MS', sans-serif;
+          text-decoration: none; }
+
+.header {
+  width: 100%;
+  height: 755px;
+  background-color: #131313; }
+  .header__main-block {
+    display: flex;
+    width: 100%;
+    height: 707px;
+    background-image: url(/img/header-background.png); }
+    .header__main-block__instagram {
+      display: flex;
+      flex-direction: column;
+      width: 82px;
+      background-color: #131313;
+      align-items: center;
+      justify-content: center; }
+      .header__main-block__instagram--text {
+        font-family: Calibri, 'Trebuchet MS', sans-serif;
+        font-weight: 600;
+        rotate: 90deg;
+        color: #E3B873;
+        transform: rotate(90deg); }
+      .header__main-block__instagram--line {
+        width: 2px;
+        height: 50px;
+        border-radius: 2px;
+        background-color: #E3B873;
+        margin-top: 45px; }
+  .header__scroll-down {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: -49px;
+    width: 247px;
+    height: 97px;
+    background-color: #131313;
+    z-index: 2; }
+    .header__scroll-down--text {
+      font-size: 14px;
+      font-family: 'Yeseva One', 'Times New Roman', serif;
+      color: white; }
+
+.main {
+  width: 100%;
+  height: 1815px;
+  background-color: #575757;
+  z-index: 0; }
+  .main__upper-wrapper {
+    height: 200px;
+    width: 200px;
+    background-color: red; }
+
+@font-face {
+  font-family: 'Yeseva One';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local("Yeseva One Regular"), local("YesevaOne-Regular"), url(https://fonts.gstatic.com/s/yesevaone/v14/OpNJno4ck8vc-xYpwWWxli1VWw.woff2) format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }
+
+.body {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  align-items: center; }
