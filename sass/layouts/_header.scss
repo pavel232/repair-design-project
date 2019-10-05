@@ -9,8 +9,7 @@ $color-selected: #E3B873;
         display: flex;
         width: 100%;
         height: 707px;
-        background-image: url(/img/header-background.png);
-
+        
         &__instagram {
             display: flex;
             flex-direction: column;
@@ -38,7 +37,116 @@ $color-selected: #E3B873;
         }
 
         &__background {
+            display: flex;
+            align-items: center;
+            width: 100%;
+            background-image: url(/img/header-background.png);
+            
+            &__turnkey-repair {
+                display: flex;
+                flex-direction: column;
+                align-items: left;
+                width: 600px;
+                margin-left: 60px;
 
+                &--headline {
+                    font-family: 'Yeseva One';
+                    font-style: normal;
+                    font-weight: normal;
+                    font-size: 40px;
+                    line-height: 53px;
+                    text-transform: uppercase;
+                    color: white;
+
+                    & span {
+                        color: $color-selected;
+                    }
+                }
+
+                &--text {
+                    margin-top: 30px;
+                    font-family: 'Century Gothic', 'Trebuchet MS', sans-serif;
+                    font-size: 22px;
+                    line-height: 30px;
+                    font-weight: 200;
+                    color: #FFFFFF;
+                }
+
+                &--buttons {
+                    display: flex;
+                    justify-content: space-between;
+                    width: 434px;
+                    height: 51px;
+                    margin-top: 40px;
+
+                    &--calculate {
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        width: 207px;
+                        height: 51px;
+                        border: 1px solid white;
+                        box-sizing: border-box;
+                        border-radius: 2px;
+                        cursor: pointer;
+
+                        &:hover {
+                            background-color: $color-selected;
+                            border: none;
+                        }
+
+                        & a {
+                            color: white;
+                            font-family: 'Century Gothic', 'Trebuchet MS', sans-serif;
+                            font-size: 13px;
+                            line-height: 15px;
+                        }
+
+                        & a:link {
+                            text-decoration: none;
+                            color: white;
+                        }
+                        & a:visited {
+                            text-decoration: none;
+                            color: white;
+                        }
+
+                    }
+
+                    &--submit {
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        width: 207px;
+                        height: 51px;
+                        border: 1px solid white;
+                        box-sizing: border-box;
+                        border-radius: 2px;
+                        cursor: pointer;
+
+                        &:hover {
+                            background-color: $color-selected;
+                            border: none;
+                        }
+
+                        & a {
+                            color: white;
+                            font-family: 'Century Gothic', 'Trebuchet MS', sans-serif;
+                            font-size: 13px;
+                            line-height: 15px;
+                        }
+
+                        & a:link {
+                            text-decoration: none;
+                            color: white;
+                        }
+                        & a:visited {
+                            text-decoration: none;
+                            color: white;
+                        }
+                    }
+                }
+            }
         }
     }
 
