@@ -1,0 +1,25 @@
+$color-selected: #E3B873;
+
+.main__completed-projects {
+    display: flex;
+    width: 100%;
+    height: 690px;
+    background-color: #131313;
+
+    &__text {
+        width: 442px;
+        height: 483px;
+        background-color: grey;
+        margin-left: 101px;
+        margin-top: 129px;
+    }
+
+    &__video {
+        width: 100%;
+        height: 552px;
+        background-color: grey;
+
+        margin-left: 50px;
+        margin-top: 59px;
+    }
+}

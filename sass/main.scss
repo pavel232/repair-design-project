@@ -1,7 +1,16 @@
 @import "layouts/_navbar";
 @import "layouts/_header";
 @import "layouts/_main";
+@import "layouts/_main-completed-projects";
+@import "layouts/_main-online-control";
+@import "layouts/_main-types-of-repair";
+@import "layouts/_main-design-project";
+@import "layouts/_main-our-team";
+@import "layouts/_main-our-clients";
+@import "layouts/_main-questions-and-map";
+@import "layouts/_footer";
 @import "fonts/_fonts";
+
 
 .body {
     display: flex;

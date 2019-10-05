@@ -1,0 +1,47 @@
+.main__types-of-repair {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 2790px;
+
+    &__headline {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 257px;
+        height: 67px;
+
+        & p {
+            font-family: 'Yeseva One';
+            font-style: normal;
+            font-weight: normal;
+            font-size: 20px;
+            line-height: 28px;
+            text-align: center;
+            text-transform: uppercase;
+        }
+    }
+
+    &__repair-types {
+        width: 1236px;
+        height: 608px;
+        margin-top: 31px;
+        background-color: grey;
+    }
+
+    &__request {
+        width: 1236px;
+        height: 726px;
+        margin-top: 124px;
+        background-color: grey;
+    }
+
+    &__styles {
+        width: 100%;
+        height: 1018px;
+        margin-top: 130px;
+        background-color: grey;
+    }
+}

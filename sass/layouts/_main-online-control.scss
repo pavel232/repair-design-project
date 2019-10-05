@@ -1,0 +1,42 @@
+.main__online-control {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 1030px;
+
+    &__background {
+        width: 100%;
+        height: 400px;
+        background-color: black;
+    }
+
+    &__navigation {
+        display: flex;
+        justify-content: center;
+        width: 817px;
+        height: 1030px;
+        background-color: rgb(70, 70, 70);
+        margin-top: -400px;
+
+        &__headline {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            width: 196px;
+            height: 67px;
+
+            & p {
+                font-family: 'Yeseva One';
+                font-style: normal;
+                font-weight: normal;
+                font-size: 20px;
+                line-height: 28px;
+                text-align: center;
+                text-transform: uppercase;
+                color: white;
+            }
+        }
+    }
+}
