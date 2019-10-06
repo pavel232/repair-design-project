@@ -3,40 +3,139 @@
     flex-direction: column;
     align-items: center;
     width: 100%;
-    height: 1030px;
+    height: 1100px;
 
     &__background {
         width: 100%;
-        height: 400px;
-        background-color: black;
+        height: 315px;
+        background-color: #131313;
     }
 
     &__navigation {
         display: flex;
-        justify-content: center;
-        width: 817px;
-        height: 1030px;
-        background-color: rgb(70, 70, 70);
-        margin-top: -400px;
+        flex-direction: column;
+        align-items: center;
+        width: 816px;
+        height: 1100px;
+        margin-top: -315px;
 
         &__headline {
+            width: 196px;
+            height: 67px;
+        }
+
+        &__video {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 816px;
+            height: 434px;
+            margin-top: 31px;
+            background-image: url("/img/online-control-navigation-video.png")
+        }
+
+        &__separator {
+            width: 55px;
+            height: 2px;
+            margin-top: 62px;
+            background-color: #E3B873;
+        }
+
+        &__text {
+            width: 681px;
+            height: 131px;
+            margin-top: 35px;
+            font-family: 'Century Gothic', 'Trebuchet MS', sans-serif;
+            font-size: 16px;
+            line-height: 34px;
+            text-align: center;
+            color: #363636;
+        }
+
+        &__submit {
             display: flex;
             flex-direction: column;
             align-items: center;
-            justify-content: center;
-            width: 196px;
-            height: 67px;
+            justify-content: space-between;
+            width: 769px;
+            height: 103px;
+            margin-top: 91px;
 
-            & p {
-                font-family: 'Yeseva One';
-                font-style: normal;
-                font-weight: normal;
-                font-size: 20px;
-                line-height: 28px;
-                text-align: center;
-                text-transform: uppercase;
-                color: white;
+            &--bar {
+                display: flex;
+                justify-content: space-between;
+                width: 100%;
+                height: 51px;
+
+                & p {
+                    font-family: 'Century Gothic', 'Trebuchet MS', sans-serif;
+                    font-size: 15px;
+                    line-height: 20px;
+                    color: rgba(54, 54, 54, 0.5);
+                }
+
+                & input {
+                    width: 100%;
+                    font-family: 'Century Gothic', 'Trebuchet MS', sans-serif;
+                    font-size: 18px;
+                    line-height: 24px;
+                    border: none;
+                    border-bottom: 1px solid #363636;
+                }
+
+                &--name {
+                    width: 231px;
+                    height: 45px;
+                }
+
+                &--phone {
+                    width: 231px;
+                    height: 45px;
+                }
+
+                &--button {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    width: 200px;
+                    height: 51px;
+                    
+                    background: #E3B873;
+                    box-shadow: 0px 15px 15px rgba(227, 184, 115, 0.15);
+                    border-radius: 2px;
+
+                    & a {
+                        font-family: 'Century Gothic', 'Trebuchet MS', sans-serif;
+                        font-size: 20px;
+                        line-height: 26px;
+                        text-align: center;
+                        text-transform: uppercase;
+                        color: #FFFFFF;
+                        text-decoration: none;
+                    }
+                }
+
+
             }
+
+            &--checkbox {
+                display: flex;
+                align-items: center;
+
+                & input {
+                    width: 18px;
+                    height: 18px;
+                }
+            
+                & span {
+                    font-family: 'Century Gothic', 'Trebuchet MS', sans-serif;
+                    font-size: 16px;
+                    line-height: 22px;
+                    color: #181818;
+                }
+            }
+
+
         }
     }
 }

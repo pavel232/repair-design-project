@@ -3,23 +3,171 @@ $color-selected: #E3B873;
 .main__completed-projects {
     display: flex;
     width: 100%;
-    height: 690px;
+    height: 750px;
     background-color: #131313;
+    margin-top: -97px;
 
     &__text {
-        width: 442px;
+        min-width: 442px;
         height: 483px;
-        background-color: grey;
         margin-left: 101px;
-        margin-top: 129px;
+        margin-top: 176px;
+
+        &--heading {
+            display: flex;
+
+            & h2 {
+                font-family: 'Yeseva One';
+                font-style: normal;
+                font-weight: normal;
+                font-size: 27px;
+                line-height: 37px;
+                letter-spacing: -0.07em;
+                text-transform: uppercase;
+                color: $color-selected;
+            }
+
+            &--line {
+                width: 92px;
+                height: 2px;
+                margin-top: 55px;
+                margin-left: 10px;
+                background-color: $color-selected;
+            }
+        }
+
+        &--article {
+            margin-top: 24px;
+
+            & p {
+                font-family: 'Century Gothic', 'Trebuchet MS', sans-serif;
+                font-size: 15px;
+                line-height: 29px;
+                color: white;
+            }
+        }
+
+        &--sub {
+            display: flex;
+            margin-top: 41px;
+
+            &--right {
+                margin-left: 29px;
+            }
+
+            & h3 {
+                font-family: 'Yeseva One';
+                font-style: normal;
+                font-weight: normal;
+                font-size: 18px;
+                line-height: 25px;
+                text-transform: uppercase;
+                color: $color-selected;
+            }
+
+            & p {
+                font-family: 'Century Gothic', 'Trebuchet MS', sans-serif;
+                font-size: 15px;
+                line-height: 20px;
+                color: white;
+                margin-bottom: 41px;
+            }
+        }
+
+        &--nav {
+            display: flex;
+            justify-content: space-between;
+            width: 206px;
+            height: 13px;
+            margin-top: 55px;
+
+            &--prev {
+                cursor: pointer;
+            }
+
+            &--dot--active {
+                width: 9px;
+                height: 9px;
+                border-radius: 30px;
+                background-color: white;
+            }
+
+            &--dot {
+                width: 9px;
+                height: 9px;
+                border-radius: 30px;
+                background-color: rgba(255, 255, 255, 0.3);
+            }
+
+            &--next {
+                cursor: pointer;
+            }
+        }
     }
 
-    &__video {
-        width: 100%;
+    &__pictures {
+        width: 846px;
         height: 552px;
-        background-color: grey;
-
         margin-left: 50px;
-        margin-top: 59px;
+        margin-top: 107px;
+
+        &__navigation {
+            display: flex;
+            justify-content: space-between;
+            width: 623px;
+            height: 24px;
+            
+
+            &--text {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                height:100%;
+                
+                & a {
+                    color: white;
+                    opacity: 0.3;
+                    text-decoration: none;
+                    font-family: 'Yeseva One';
+                    font-style: normal;
+                    font-weight: normal;
+                    font-size: 14px;
+                    line-height: 19px;
+                    text-transform: uppercase;
+                }
+
+                & div {
+                    opacity: 0;
+                    width:100%;
+                    height: 1px;
+                    background-color: $color-selected;
+                }
+
+                &:hover {
+                    & a {
+                        color: $color-selected;
+                        opacity: 1;
+                    }
+                    & div {
+                        opacity: 1;
+                    }
+                    
+                }
+            }
+        }
+
+        &__window {
+            display: flex;
+            height: 482px;
+            margin-top: 45px;
+
+            &--next {
+                position: relative;
+            }
+
+            &--2 {
+                margin-left: 21px;
+            }
+        }
     }
 }
