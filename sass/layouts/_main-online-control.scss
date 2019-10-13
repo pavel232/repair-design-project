@@ -128,8 +128,89 @@
                     color: #181818;
                 }
             }
+        }
+    }
+}
 
+@media screen and (max-width: 375px) {
+    .main__online-control {
+        height: 830px;
+        background-color: #131313;
 
+        &__background {
+            display: none;
+        }
+
+        &__navigation {
+            width: 340px;
+            margin-top: 0px;
+
+            &__video {
+                width: 340px;
+                height: 207px;
+            }
+
+            &__separator {
+                margin-top: 28px;
+            }
+
+            &__text {
+                width: 340px;
+                height: 150px;
+                margin-top: 21px;
+                font-size: 13px;
+                line-height: 24px;
+                color: white;
+            }
+
+            &__submit {
+                margin-top: 61px;
+                width: 340px;
+                height: 286px;
+
+                &--bar {
+                    justify-content: center;
+                    flex-wrap: wrap;
+
+                    & p {
+                        color: rgba(255, 255, 255, 0.5);
+                    }
+
+                    &--input {
+                        width: 100%;
+                        font-size: 18px;
+                        line-height: 24px;
+                        border: none;
+                        background-color: #131313;
+                        border-bottom: 1px solid white;
+                    }
+
+                    &--name {
+                        width: 100%;
+                    }
+    
+                    &--phone {
+                        margin-top: 63px;
+                        width: 100%;
+                    }
+
+                    &--button {
+                        width: 340px;
+                        margin-top: 85px;
+                    }
+                }
+
+                &--checkbox {
+                    position: relative;
+                    top: -85px;
+                    width: 340px;
+                
+                    & span {
+                        font-size: 14px;
+                        color: white;
+                    }
+                }
+            }
         }
     }
 }

@@ -370,3 +370,125 @@
         }
     }
 }
+
+@media screen and (max-width: 375px) {
+    .main__design-project {
+        margin-top: -150px;
+        width: 375px;
+        height: 2200px;
+
+        &__top-background {
+            display: none;
+        }
+        &__body {
+            margin-top: 150px;
+            width: 100%;
+    
+            &__text {
+                width: 340px;
+                height: 76px;
+                font-size: 15px;
+                line-height: 20px;
+                text-align: center;
+                color: #FFFFFF;
+                margin-top: 24px;
+            }
+
+            &__types {
+                width: 340px;
+                height: 1000px;
+                flex-wrap: wrap;
+
+                &--left {
+                    width: 340px;
+                    height: 420px;
+                    align-items: flex-start;
+
+                    & img {
+                        width: 340px;
+                        height: 420px;
+                    }
+                }
+        
+                &--center {
+                    width: 392px;
+                    height: 484px;
+                    margin-top: 100px;
+                    align-items: flex-start;
+
+                    & img {
+                        width: 340px;
+                        height: 420px;
+                    }
+                }
+        
+                &--right {
+                    width: 392px;
+                    height: 550px;
+                    margin-top: 105px;
+                    align-items: flex-start;
+
+                    & img {
+                        width: 340px;
+                        height: 420px;
+                    }
+                }
+
+                &--list-left {
+                    width: 270px;
+
+                    & h3 {
+                        font-size: 15px;
+                        line-height: 21px;
+                    }
+
+                    & ul {
+                        margin-top: 5px;
+                        font-size: 13px;
+                        line-height: 22px;
+                    }
+                }
+
+                &--list-center {
+                    width: 270px;
+
+                    & h3 {
+                        font-size: 15px;
+                        line-height: 21px;
+                    }
+
+                    & ul {
+                        margin-top: 5px;
+                        font-size: 13px;
+                        line-height: 22px;
+                    }
+                }
+
+                &--list-right {
+                    width: 270px;
+
+                    & h3 {
+                        font-size: 15px;
+                        line-height: 21px;
+                    }
+
+                    & ul {
+                        margin-top: 5px;
+                        font-size: 13px;
+                        line-height: 19px;
+                    }
+                }
+
+                &--button {
+                    width: 190px;
+                    height: 40px;
+                    top: 20px;
+                }
+            }
+
+            &__working {
+                display: none;
+            }
+        }
+    }
+}

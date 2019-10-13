@@ -170,8 +170,118 @@ $color-selected: #E3B873;
                 right: 0;
             }
 
+            &--prev {
+                display: none;
+            }
+
             &--2 {
                 margin-left: 21px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .main__completed-projects {
+        height: 691px;
+        margin-top: 0px;
+        flex-direction: column;
+
+        &__text {
+            width: 375px;
+            min-width: 375px;
+            margin-left: 0px;
+            margin-top: 36px;
+            z-index: 0;
+
+            &--heading {
+                justify-content: center;
+
+                & h2 {
+                    font-size: 22px;
+                    line-height: 30px;
+                    letter-spacing: -0.07em;
+                    text-transform: uppercase;
+                    color: $color-selected;
+                    text-align: center;
+                }
+
+                &--line {
+                    display: none;
+                }
+            }
+
+            &--article {
+                width: 340px;
+                margin-top: 22px;
+                margin-left: 18px;
+    
+                & p {
+                    font-size: 14px;
+                    line-height: 22px;
+                }
+            }
+
+            &--sub {
+                width: 340px;
+                margin-top: 250px;
+                margin-left: 18px;
+            }
+
+            &--nav {
+                display: none;
+            }
+        }
+
+        &__pictures {
+            width: 340px;
+            height: 242px;
+            margin-top: -330px;
+            margin-left: 18px;
+
+            &__navigation {
+                display: none;
+            }
+
+            &__window {
+                width: 340px;
+                height: 242px;
+                z-index: 2;
+
+                &--1 {
+                    width: 340px;
+                    height: 242px;
+                }
+
+                &--2 {
+                    display: none;
+                }
+
+                &--next {
+                    width: 36px;
+                    height: 36px;
+                    top: 125px;
+                    right: 0;
+
+                    & img {
+                        width: 36px;
+                        height: 36px;
+                    }
+                }
+
+                &--prev {
+                    display: inline;
+                    position: relative;
+                    width: 43px;
+                    height: 43px;
+                    top: 76px;
+                    left: -373px;
+
+                    & img {
+                        width: 43px;
+                        height: 43px;
+                    }
+                }
             }
         }
     }

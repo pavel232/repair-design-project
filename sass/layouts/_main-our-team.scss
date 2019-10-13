@@ -142,3 +142,48 @@
         }
     }
 }
+
+@media screen and (max-width: 375px) {
+    .main__our-team {
+        height: 1840px;
+        background-color: #131313;
+
+        &__top-background {
+            display: none;
+        }
+
+        &__body {
+            width: 100%;
+            margin-top: 0px;
+
+            &__headline {
+                width: 340px;
+                height: 133px;
+
+                & p {
+                    margin-top: 10px;
+                    font-size: 15px;
+                    line-height: 20px;
+                }
+            }
+
+            &__team {
+                margin-top: 0px;
+                width: 375px;
+                height: 2000px;
+                flex-wrap: wrap;
+                justify-content: flex-start;
+
+                &--employee {
+                    margin-top: 30px;
+                    width: 340px;
+                }
+    
+            }
+
+            &__employees-info {
+                display: none;
+            }
+        }
+    }
+}

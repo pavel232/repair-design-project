@@ -407,6 +407,10 @@
                 line-height: 37px;
                 text-transform: uppercase;
                 color: #E3B873;
+
+                &--mobile {
+                    display: none;
+                }
             }
 
             &--elements {
@@ -452,6 +456,115 @@
                 display: flex;
                 flex-direction: column;
                 justify-content: space-between;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .main__types-of-repair {
+        margin-top: 58px;
+        height: 2030px;
+
+        &__repair-types {
+            flex-wrap: wrap;
+            width: 340px;
+
+            &--left {
+                align-items: flex-start;
+                width: 340px;
+                height: 484px;
+
+                & img {
+                    width: 340px;
+                    height: 365px;
+                }
+            }
+
+            &--center {
+                align-items: flex-start;
+                width: 340px;
+                height: 484px;
+                margin-top: 60px;
+
+                & img {
+                    width: 340px;
+                    height: 365px;
+                }
+            }
+
+            &--right {
+                align-items: flex-start;
+                width: 340px;
+                height: 484px;
+                margin-top: 60px;
+
+                & img {
+                    width: 340px;
+                    height: 365px;
+                }
+            }
+
+            &--list {
+                width: 270px;
+
+                & h3 {
+                    margin-left: 31px;
+                    font-size: 15px;
+                    line-height: 21px;
+                }
+
+                & ul {
+                    font-size: 13px;
+                    line-height: 19px;
+                }
+            }
+        }
+
+        &__request {
+            display: none;
+        }
+
+        &__styles {
+            margin-top: 760px;
+            background-image: none;
+
+            &__text {
+                text-align: center;
+                width: 100%;
+                align-items: center;
+                justify-content: end;
+                margin-top: 220px;
+
+                &--heading {
+                    &--mobile {
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+                        width: 340px;
+                        height: 242px;
+                        background-image: url(/img/mobile-fantasies-img.png);
+                        z-index: 2;
+
+                        &--next {
+                            width: 36px;
+                            height: 36px;
+                        }
+
+                        &--prev {
+                            width: 43px;
+                            height: 43px;
+                        }
+                    }
+                }
+
+                &--elements {
+                    display: none;
+                }
+            }
+            
+            &__images {
+                display: none;
             }
         }
     }

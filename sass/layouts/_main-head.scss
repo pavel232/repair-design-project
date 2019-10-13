@@ -171,3 +171,63 @@ $color-selected: #E3B873;
         }
     }
 }
+
+@media screen and (max-width: 375px) {
+    .main__head {
+        &__main-block {
+            height: 476px;
+
+            &__instagram {
+                display: none;
+            }
+
+            &__background {
+                width: 375px;
+                height: 476px;
+                align-items: flex-start;
+
+                &__turnkey-repair {
+                    width: 375px;
+                    margin-top: 85px;
+                    margin-left: 18px;
+                    margin-right: 18px;
+
+                    &--headline {
+                        width: 339px;
+                        height: 60px;
+                        line-height: 31px;
+                        font-size: 23px;
+                    }
+
+                    &--text {
+                        width: 339px;
+                        height: 94px;
+                        margin-top: 16px;
+                        font-size: 15px;
+                        line-height: 24px;
+                    }
+
+                    &--buttons {
+                        flex-direction: column;
+                        width: 339px;
+                        height: 128px;
+                        margin-top: 32px;
+
+                        &--calculate {
+                            width: 100%;
+                        }
+
+                        &--submit {
+                            width: 100%;
+                            margin-top: 26px;
+                        }
+                    }
+                }
+            }
+        }
+
+        &__scroll-down {
+            display: none;
+        }
+    }
+}
