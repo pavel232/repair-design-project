@@ -50,6 +50,8 @@
           text-decoration: none; }
 
 .main {
+  display: flex;
+  flex-direction: column;
   width: 100%;
   background-color: white; }
 
@@ -85,7 +87,7 @@
       display: flex;
       align-items: center;
       width: 100%;
-      background-image: url(/img/header-background.png); }
+      background-image: url(../img/main-head-background.png); }
       .main__head__main-block__background__turnkey-repair {
         display: flex;
         flex-direction: column;
@@ -255,8 +257,9 @@
       .main__completed-projects__text--nav--next {
         cursor: pointer; }
   .main__completed-projects__pictures {
-    width: 846px;
+    width: 100%;
     height: 552px;
+    overflow: hidden;
     margin-left: 50px;
     margin-top: 107px; }
     .main__completed-projects__pictures__navigation {
@@ -294,7 +297,11 @@
       height: 482px;
       margin-top: 45px; }
       .main__completed-projects__pictures__window--next {
-        position: relative; }
+        width: 85px;
+        height: 85px;
+        position: sticky;
+        top: 260px;
+        right: 0; }
       .main__completed-projects__pictures__window--2 {
         margin-left: 21px; }
 
@@ -319,9 +326,6 @@
       width: 196px;
       height: 67px; }
     .main__online-control__navigation__video {
-      display: flex;
-      align-items: center;
-      justify-content: center;
       width: 816px;
       height: 434px;
       margin-top: 31px;
@@ -358,7 +362,7 @@
           font-size: 15px;
           line-height: 20px;
           color: rgba(54, 54, 54, 0.5); }
-        .main__online-control__navigation__submit--bar input {
+        .main__online-control__navigation__submit--bar--input {
           width: 100%;
           font-family: 'Century Gothic', 'Trebuchet MS', sans-serif;
           font-size: 18px;
@@ -378,16 +382,16 @@
           width: 200px;
           height: 51px;
           background: #E3B873;
+          border: none;
           box-shadow: 0px 15px 15px rgba(227, 184, 115, 0.15);
-          border-radius: 2px; }
-          .main__online-control__navigation__submit--bar--button a {
-            font-family: 'Century Gothic', 'Trebuchet MS', sans-serif;
-            font-size: 20px;
-            line-height: 26px;
-            text-align: center;
-            text-transform: uppercase;
-            color: #FFFFFF;
-            text-decoration: none; }
+          border-radius: 2px;
+          font-family: 'Century Gothic', 'Trebuchet MS', sans-serif;
+          font-size: 20px;
+          line-height: 26px;
+          text-align: center;
+          text-transform: uppercase;
+          color: #FFFFFF;
+          text-decoration: none; }
       .main__online-control__navigation__submit--checkbox {
         display: flex;
         align-items: center; }
@@ -413,29 +417,349 @@
     justify-content: center;
     width: 257px;
     height: 67px; }
-    .main__types-of-repair__headline p {
-      font-family: 'Yeseva One';
-      font-style: normal;
-      font-weight: normal;
-      font-size: 20px;
-      line-height: 28px;
-      text-align: center;
-      text-transform: uppercase; }
   .main__types-of-repair__repair-types {
+    display: flex;
+    justify-content: space-between;
     width: 1236px;
     height: 608px;
-    margin-top: 31px;
-    background-color: grey; }
+    margin-top: 31px; }
+    .main__types-of-repair__repair-types--list {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      width: 330px;
+      height: 313px;
+      margin-top: -127px;
+      background-color: white; }
+      .main__types-of-repair__repair-types--list h3 {
+        margin-top: 25px;
+        margin-left: 34px;
+        font-family: 'Yeseva One';
+        font-style: normal;
+        font-weight: normal;
+        font-size: 18px;
+        line-height: 25px;
+        color: #363636; }
+      .main__types-of-repair__repair-types--list ul {
+        margin-top: -10px;
+        margin-left: 34px;
+        font-family: 'Century Gothic', 'Trebuchet MS', sans-serif;
+        font-size: 15px;
+        line-height: 25px;
+        color: #959595; }
+      .main__types-of-repair__repair-types--list--button {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 228px;
+        height: 54px;
+        background-color: #E3B873; }
+        .main__types-of-repair__repair-types--list--button a {
+          text-decoration: none;
+          font-family: 'Yeseva One';
+          font-style: normal;
+          font-weight: normal;
+          font-size: 18px;
+          line-height: 25px;
+          text-transform: uppercase;
+          color: #FFFFFF; }
+    .main__types-of-repair__repair-types--left {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 392px;
+      height: 100%; }
+    .main__types-of-repair__repair-types--center {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 392px;
+      height: 100%; }
+    .main__types-of-repair__repair-types--right {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 392px;
+      height: 100%; }
   .main__types-of-repair__request {
-    width: 1236px;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
     height: 726px;
-    margin-top: 124px;
-    background-color: grey; }
+    margin-top: 124px; }
+    .main__types-of-repair__request__image {
+      display: flex;
+      overflow: hidden;
+      width: 835px;
+      height: 692px;
+      background-repeat: no-repeat;
+      background-image: url(../img/repair-request-image.png); }
+      .main__types-of-repair__request__image--border {
+        width: 691px;
+        height: 636px;
+        margin-left: -200px;
+        margin-top: 95px;
+        border: 3px solid #E3B873;
+        border-radius: 100%; }
+      .main__types-of-repair__request__image--info {
+        display: flex;
+        flex-direction: column;
+        width: 500px;
+        height: 440px;
+        margin-left: 537px;
+        margin-top: 45px; }
+        .main__types-of-repair__request__image--info--text {
+          margin-left: 10px; }
+        .main__types-of-repair__request__image--info--01 {
+          display: flex; }
+          .main__types-of-repair__request__image--info--01 div {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 91px;
+            height: 55px;
+            background-color: white;
+            border-radius: 100%; }
+            .main__types-of-repair__request__image--info--01 div p {
+              width: 42px;
+              height: 42px;
+              background-color: #E3B873;
+              border-radius: 100%;
+              font-family: 'Yeseva One';
+              font-style: normal;
+              font-weight: normal;
+              font-size: 18px;
+              line-height: 25px;
+              text-align: center;
+              color: #FFFFFF;
+              display: flex;
+              justify-content: center;
+              align-items: center; }
+        .main__types-of-repair__request__image--info--02 {
+          display: flex;
+          margin-top: 72px;
+          margin-left: 101px; }
+          .main__types-of-repair__request__image--info--02 div {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 55px;
+            height: 55px;
+            background-color: white;
+            border-radius: 100%; }
+            .main__types-of-repair__request__image--info--02 div p {
+              width: 42px;
+              height: 42px;
+              background-color: #E3B873;
+              border-radius: 100%;
+              font-family: 'Yeseva One';
+              font-style: normal;
+              font-weight: normal;
+              font-size: 18px;
+              line-height: 25px;
+              text-align: center;
+              color: #FFFFFF;
+              display: flex;
+              justify-content: center;
+              align-items: center; }
+        .main__types-of-repair__request__image--info--03 {
+          display: flex;
+          margin-top: 108px;
+          margin-left: 127px; }
+          .main__types-of-repair__request__image--info--03 div {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 55px;
+            height: 55px;
+            background-color: white;
+            border-radius: 100%; }
+            .main__types-of-repair__request__image--info--03 div p {
+              width: 42px;
+              height: 42px;
+              background-color: #E3B873;
+              border-radius: 100%;
+              font-family: 'Yeseva One';
+              font-style: normal;
+              font-weight: normal;
+              font-size: 18px;
+              line-height: 25px;
+              text-align: center;
+              color: #FFFFFF;
+              display: flex;
+              justify-content: center;
+              align-items: center; }
+        .main__types-of-repair__request__image--info--04 {
+          display: flex;
+          margin-top: 103px;
+          margin-left: 51px; }
+          .main__types-of-repair__request__image--info--04 div {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 55px;
+            height: 55px;
+            background-color: white;
+            border-radius: 100%; }
+            .main__types-of-repair__request__image--info--04 div p {
+              width: 42px;
+              height: 42px;
+              background-color: #E3B873;
+              border-radius: 100%;
+              font-family: 'Yeseva One';
+              font-style: normal;
+              font-weight: normal;
+              font-size: 18px;
+              line-height: 25px;
+              text-align: center;
+              color: #FFFFFF;
+              display: flex;
+              justify-content: center;
+              align-items: center; }
+        .main__types-of-repair__request__image--info--text {
+          display: flex;
+          align-items: center;
+          font-family: 'Century Gothic', 'Trebuchet MS', sans-serif;
+          font-size: 18px;
+          line-height: 21px;
+          color: #363636; }
+    .main__types-of-repair__request__form {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      width: 506px;
+      height: 620px;
+      margin-top: 106px;
+      margin-left: -40px; }
+      .main__types-of-repair__request__form--submit {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 506px;
+        height: 509px;
+        background-color: black; }
+        .main__types-of-repair__request__form--submit h3 {
+          width: 297px;
+          height: 47px;
+          margin-top: 28px;
+          font-family: 'Century Gothic', 'Trebuchet MS', sans-serif;
+          font-size: 20px;
+          line-height: 25px;
+          text-align: center;
+          color: #FFFFFF; }
+        .main__types-of-repair__request__form--submit--element {
+          margin-top: 39px;
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+          width: 408px;
+          height: 49px; }
+        .main__types-of-repair__request__form--submit p {
+          font-family: 'Century Gothic', 'Trebuchet MS', sans-serif;
+          font-size: 15px;
+          line-height: 20px;
+          color: rgba(255, 255, 255, 0.5); }
+        .main__types-of-repair__request__form--submit--input {
+          width: 100%;
+          font-family: 'Century Gothic', 'Trebuchet MS', sans-serif;
+          font-size: 18px;
+          line-height: 24px;
+          color: white;
+          background-color: black;
+          border: none;
+          border-bottom: 1px solid #363636; }
+        .main__types-of-repair__request__form--submit--checkbox {
+          display: flex;
+          align-items: center;
+          width: 408px;
+          height: 18px;
+          margin-top: 16px; }
+          .main__types-of-repair__request__form--submit--checkbox input {
+            width: 18px;
+            height: 18px; }
+          .main__types-of-repair__request__form--submit--checkbox span {
+            font-family: 'Century Gothic', 'Trebuchet MS', sans-serif;
+            font-size: 16px;
+            line-height: 22px;
+            color: #FFFFFF; }
+        .main__types-of-repair__request__form--submit--button {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          width: 213px;
+          height: 51px;
+          background: #E3B873;
+          border: none;
+          box-shadow: 0px 15px 15px rgba(227, 184, 115, 0.15);
+          font-family: 'Century Gothic', 'Trebuchet MS', sans-serif;
+          font-size: 20px;
+          line-height: 26px;
+          text-align: center;
+          text-transform: uppercase;
+          color: #FFFFFF;
+          text-decoration: none;
+          margin-top: 39px;
+          margin-left: 200px; }
+      .main__types-of-repair__request__form img {
+        margin-bottom: -30px; }
   .main__types-of-repair__styles {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
     width: 100%;
     height: 1018px;
     margin-top: 130px;
-    background-color: grey; }
+    background-image: url(../img/styles-background.png);
+    background-repeat: no-repeat;
+    background-position-y: 113px; }
+    .main__types-of-repair__styles__text {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      width: 411px;
+      height: 630px;
+      margin-top: 100px; }
+      .main__types-of-repair__styles__text--heading {
+        font-family: 'Yeseva One';
+        font-style: normal;
+        font-weight: normal;
+        font-size: 27px;
+        line-height: 37px;
+        text-transform: uppercase;
+        color: #E3B873; }
+      .main__types-of-repair__styles__text--elements {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 516px; }
+        .main__types-of-repair__styles__text--elements a {
+          width: fit-content;
+          font-family: calibri;
+          font-size: 20px;
+          line-height: 34px;
+          color: #FFFFFF;
+          text-decoration: none; }
+          .main__types-of-repair__styles__text--elements a:hover {
+            color: #E3B873;
+            border-bottom: 1px solid #E3B873; }
+    .main__types-of-repair__styles__images {
+      display: flex;
+      justify-content: space-between;
+      width: 751px;
+      height: 1018px; }
+      .main__types-of-repair__styles__images--left {
+        width: 354px;
+        height: 947px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin-top: 72px; }
+      .main__types-of-repair__styles__images--right {
+        width: 354px;
+        height: 947px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between; }
 
 .main__design-project {
   display: flex;
@@ -454,8 +778,7 @@
     align-items: center;
     width: 1240px;
     height: 1680px;
-    margin-top: -466px;
-    background-color: #e0e0e0; }
+    margin-top: -466px; }
     .main__design-project__body__headline {
       display: flex;
       flex-direction: column;
@@ -463,21 +786,273 @@
       justify-content: center;
       width: 257px;
       height: 67px; }
-      .main__design-project__body__headline p {
-        font-family: 'Yeseva One';
-        font-style: normal;
-        font-weight: normal;
-        font-size: 20px;
-        line-height: 28px;
-        text-align: center;
-        text-transform: uppercase; }
+    .main__design-project__body__text {
+      width: 763px;
+      height: 57px;
+      font-family: 'Century Gothic', 'Trebuchet MS', sans-serif;
+      line-height: 27px;
+      text-align: center;
+      color: #363636;
+      margin-top: 24px; }
+    .main__design-project__body__types {
+      display: flex;
+      justify-content: space-between;
+      width: 1236px;
+      height: 735px;
+      margin-top: 39px; }
+      .main__design-project__body__types--list-left {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 330px;
+        height: 211px;
+        margin-top: -127px;
+        background-color: white;
+        z-index: 2; }
+        .main__design-project__body__types--list-left h3 {
+          margin-top: 25px;
+          margin-left: 34px;
+          font-family: 'Yeseva One';
+          font-style: normal;
+          font-weight: normal;
+          font-size: 18px;
+          line-height: 25px;
+          color: #363636; }
+        .main__design-project__body__types--list-left ul {
+          margin-top: -10px;
+          margin-left: 34px;
+          font-family: 'Century Gothic', 'Trebuchet MS', sans-serif;
+          font-size: 15px;
+          line-height: 25px;
+          color: #959595; }
+      .main__design-project__body__types--list-center {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 330px;
+        height: 286px;
+        margin-top: -127px;
+        background-color: white;
+        z-index: 2; }
+        .main__design-project__body__types--list-center h3 {
+          margin-top: 25px;
+          margin-left: 34px;
+          font-family: 'Yeseva One';
+          font-style: normal;
+          font-weight: normal;
+          font-size: 18px;
+          line-height: 25px;
+          color: #363636; }
+        .main__design-project__body__types--list-center ul {
+          margin-top: -10px;
+          margin-left: 34px;
+          font-family: 'Century Gothic', 'Trebuchet MS', sans-serif;
+          font-size: 15px;
+          line-height: 25px;
+          color: #959595; }
+      .main__design-project__body__types--list-right {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 330px;
+        height: 414px;
+        margin-top: -127px;
+        background-color: white;
+        z-index: 2; }
+        .main__design-project__body__types--list-right h3 {
+          margin-top: 25px;
+          margin-left: 34px;
+          font-family: 'Yeseva One';
+          font-style: normal;
+          font-weight: normal;
+          font-size: 18px;
+          line-height: 25px;
+          color: #363636; }
+        .main__design-project__body__types--list-right ul {
+          margin-top: -10px;
+          margin-left: 34px;
+          font-family: 'Century Gothic', 'Trebuchet MS', sans-serif;
+          font-size: 15px;
+          line-height: 25px;
+          color: #959595; }
+      .main__design-project__body__types--button {
+        position: relative;
+        top: 27px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 228px;
+        height: 54px;
+        background-color: #E3B873; }
+        .main__design-project__body__types--button a {
+          text-decoration: none;
+          font-family: 'Yeseva One';
+          font-style: normal;
+          font-weight: normal;
+          font-size: 18px;
+          line-height: 25px;
+          text-transform: uppercase;
+          color: #FFFFFF; }
+      .main__design-project__body__types--left {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 392px;
+        height: 100%; }
+      .main__design-project__body__types--center {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 392px;
+        height: 100%; }
+      .main__design-project__body__types--right {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 392px;
+        height: 100%; }
+    .main__design-project__body__working {
+      display: flex;
+      justify-content: space-between;
+      width: 1236px;
+      height: 686px;
+      margin-top: -27px; }
+      .main__design-project__body__working--left {
+        width: 337px;
+        height: 590px; }
+        .main__design-project__body__working--left--hwaw {
+          font-family: 'Century Gothic', 'Trebuchet MS', sans-serif;
+          font-size: 15px;
+          line-height: 21px;
+          text-transform: uppercase;
+          color: #FFFFFF; }
+        .main__design-project__body__working--left--heading {
+          display: flex;
+          justify-content: space-between;
+          width: 304px;
+          height: 84px; }
+          .main__design-project__body__working--left--heading h3 {
+            padding-top: 18px;
+            font-family: 'Yeseva One';
+            font-style: normal;
+            font-weight: normal;
+            font-size: 27px;
+            line-height: 37px;
+            text-transform: uppercase;
+            color: #E3B873; }
+          .main__design-project__body__working--left--heading div {
+            width: 92px;
+            height: 1px;
+            margin-top: 70px;
+            background-color: #E3B873; }
+        .main__design-project__body__working--left--1-6 {
+          width: 337px;
+          height: 323px;
+          margin-top: 92px; }
+          .main__design-project__body__working--left--1-6 h3 {
+            font-family: 'Yeseva One';
+            font-style: normal;
+            font-weight: normal;
+            font-size: 18px;
+            line-height: 25px;
+            text-transform: uppercase;
+            color: #FFFFFF; }
+          .main__design-project__body__working--left--1-6 h2 {
+            margin-top: 22px;
+            font-family: 'Yeseva One';
+            font-style: normal;
+            font-weight: normal;
+            font-size: 15px;
+            line-height: 23px;
+            text-transform: uppercase;
+            color: #E3B873; }
+          .main__design-project__body__working--left--1-6 p {
+            margin-top: 16px;
+            font-family: 'Century Gothic', 'Trebuchet MS', sans-serif;
+            font-size: 13px;
+            line-height: 25px;
+            color: #FFFFFF; }
+        .main__design-project__body__working--left--nav {
+          display: flex;
+          justify-content: space-between;
+          width: 287px;
+          height: 13px;
+          margin-top: 55px; }
+          .main__design-project__body__working--left--nav--prev {
+            cursor: pointer; }
+          .main__design-project__body__working--left--nav--dot--active {
+            width: 9px;
+            height: 9px;
+            border-radius: 30px;
+            background-color: white; }
+          .main__design-project__body__working--left--nav--dot {
+            width: 9px;
+            height: 9px;
+            border-radius: 30px;
+            background-color: rgba(255, 255, 255, 0.3); }
+          .main__design-project__body__working--left--nav--next {
+            cursor: pointer; }
+      .main__design-project__body__working--right {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 766px;
+        height: 686px; }
+        .main__design-project__body__working--right--text {
+          margin-top: 87px;
+          display: flex;
+          justify-content: space-between;
+          width: 766px;
+          height: 178px; }
+          .main__design-project__body__working--right--text--column {
+            display: flex;
+            flex-direction: column;
+            width: 140px;
+            height: 178px; }
+            .main__design-project__body__working--right--text--column--selected {
+              font-family: 'Yeseva One';
+              font-style: normal;
+              font-weight: normal;
+              font-size: 15px;
+              line-height: 21px;
+              text-transform: uppercase;
+              color: #FFFFFF;
+              border-bottom: 1px solid #E3B873;
+              width: fit-content; }
+            .main__design-project__body__working--right--text--column--unselected {
+              font-family: 'Yeseva One';
+              font-style: normal;
+              font-weight: normal;
+              font-size: 15px;
+              line-height: 21px;
+              text-transform: uppercase;
+              color: #FFFFFF;
+              border-bottom: 1px solid #E3B873;
+              width: fit-content;
+              opacity: 0.3; }
+            .main__design-project__body__working--right--text--column--unselected-p {
+              margin-bottom: 60px;
+              font-family: 'Century Gothic', 'Trebuchet MS', sans-serif;
+              font-size: 15px;
+              line-height: 18px;
+              color: #FFFFFF;
+              opacity: 0.3; }
+            .main__design-project__body__working--right--text--column--selected-p {
+              margin-bottom: 60px;
+              font-family: 'Century Gothic', 'Trebuchet MS', sans-serif;
+              font-size: 15px;
+              line-height: 18px;
+              color: #FFFFFF; }
+        .main__design-project__body__working--right--figure {
+          width: 766px;
+          height: 378px; }
 
 .main__our-team {
   display: flex;
   flex-direction: column;
   align-items: center;
   width: 100%;
-  height: 844px; }
+  height: 900px; }
   .main__our-team__top-background {
     width: 100%;
     height: 405px;
@@ -488,16 +1063,15 @@
     align-items: center;
     width: 1063px;
     height: 844px;
-    margin-top: -405px;
-    background-color: #d8d8d8; }
+    margin-top: -405px; }
     .main__our-team__body__headline {
       display: flex;
       flex-direction: column;
       align-items: center;
-      justify-content: center;
-      width: 196px;
-      height: 67px; }
-      .main__our-team__body__headline p {
+      justify-content: space-between;
+      width: 476px;
+      height: 148px; }
+      .main__our-team__body__headline h2 {
         font-family: 'Yeseva One';
         font-style: normal;
         font-weight: normal;
@@ -506,27 +1080,103 @@
         text-align: center;
         text-transform: uppercase;
         color: white; }
+      .main__our-team__body__headline p {
+        font-family: 'Century Gothic', 'Trebuchet MS', sans-serif;
+        font-size: 17px;
+        line-height: 27px;
+        text-align: center;
+        color: #FFFFFF; }
+    .main__our-team__body__team {
+      display: flex;
+      justify-content: space-between;
+      width: 1063px;
+      height: 504px;
+      margin-top: 20px; }
+      .main__our-team__body__team--employee {
+        display: flex;
+        flex-direction: column;
+        align-items: baseline;
+        width: 327px;
+        height: 449px; }
+        .main__our-team__body__team--employee--icon {
+          z-index: 1; }
+        .main__our-team__body__team--employee--photo {
+          margin-left: 55px;
+          margin-top: -55px;
+          z-index: 0; }
+        .main__our-team__body__team--employee--info {
+          width: 233px;
+          height: 137px;
+          margin-top: -81px;
+          margin-left: 75px;
+          background-color: #FFFFFF;
+          z-index: 1; }
+          .main__our-team__body__team--employee--info h3 {
+            margin-top: 22px;
+            font-family: 'Yeseva One';
+            font-style: normal;
+            font-weight: normal;
+            font-size: 18px;
+            line-height: 25px;
+            text-align: center;
+            color: #181818; }
+          .main__our-team__body__team--employee--info h4 {
+            font-family: 'Century Gothic', 'Trebuchet MS', sans-serif;
+            font-size: 18px;
+            line-height: 26px;
+            text-align: center;
+            color: #959595; }
+          .main__our-team__body__team--employee--info p {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 233px;
+            height: 44px;
+            margin-top: 24px;
+            background-color: #E3B873;
+            font-family: 'Yeseva One';
+            font-style: normal;
+            font-weight: normal;
+            font-size: 13px;
+            line-height: 20px;
+            text-transform: uppercase;
+            color: #FFFFFF; }
+    .main__our-team__body__employees-info {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 558px;
+      height: 154px; }
+      .main__our-team__body__employees-info div {
+        width: 55px;
+        height: 2px;
+        background-color: #E3B873; }
+      .main__our-team__body__employees-info p {
+        margin-top: 17px;
+        font-family: 'Century Gothic', 'Trebuchet MS', sans-serif;
+        font-size: 16px;
+        line-height: 34px;
+        text-align: center;
+        color: #363636; }
 
 .main__our-clients {
   display: flex;
   justify-content: center;
   width: 100%;
-  height: 773px; }
+  height: 995px; }
   .main__our-clients__body {
     display: flex;
     flex-direction: column;
     align-items: center;
     width: 1236px;
-    height: 642px;
-    background-color: bisque; }
+    height: 642px; }
     .main__our-clients__body__headline {
       display: flex;
       flex-direction: column;
       align-items: center;
-      justify-content: center;
-      width: 196px;
-      height: 67px; }
-      .main__our-clients__body__headline p {
+      width: 476px;
+      height: 146px; }
+      .main__our-clients__body__headline h2 {
         font-family: 'Yeseva One';
         font-style: normal;
         font-weight: normal;
@@ -534,13 +1184,179 @@
         line-height: 28px;
         text-align: center;
         text-transform: uppercase;
-        color: #181818; }
+        color: #181818;
+        margin-bottom: 13px; }
+      .main__our-clients__body__headline p {
+        font-family: 'Century Gothic', 'Trebuchet MS', sans-serif;
+        font-size: 20px;
+        line-height: 27px;
+        text-align: center;
+        color: #363636;
+        margin-top: 24px; }
+    .main__our-clients__body__clients {
+      width: 1236px;
+      height: 455px;
+      display: flex;
+      justify-content: space-between;
+      margin-top: 39px; }
+      .main__our-clients__body__clients--form {
+        width: 376px;
+        height: 428px; }
+        .main__our-clients__body__clients--form--photo {
+          display: flex;
+          align-items: center;
+          margin-left: 20px;
+          margin-top: 24px; }
+          .main__our-clients__body__clients--form--photo p {
+            margin-left: 23px;
+            font-family: 'Yeseva One';
+            font-style: normal;
+            font-weight: normal;
+            font-size: 18px;
+            line-height: 23px;
+            color: #181818; }
+        .main__our-clients__body__clients--form--review {
+          margin-left: 20px;
+          margin-top: 22px;
+          font-family: 'Century Gothic', 'Trebuchet MS', sans-serif;
+          font-size: 15px;
+          line-height: 180%;
+          color: #959595; }
+        .main__our-clients__body__clients--form--info {
+          display: flex;
+          width: 294px;
+          height: 54px;
+          margin-top: 58px;
+          background-color: #E3B873; }
+          .main__our-clients__body__clients--form--info--square {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 130px;
+            border-right: 1px solid #FFFFFF; }
+            .main__our-clients__body__clients--form--info--square p {
+              margin-left: 10px;
+              font-family: 'Yeseva One';
+              font-style: normal;
+              font-weight: normal;
+              font-size: 17px;
+              line-height: 24px;
+              text-transform: uppercase;
+              color: #FFFFFF; }
+          .main__our-clients__body__clients--form--info--days {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 164px; }
+            .main__our-clients__body__clients--form--info--days p {
+              margin-left: 10px;
+              font-family: 'Yeseva One';
+              font-style: normal;
+              font-weight: normal;
+              font-size: 17px;
+              line-height: 24px;
+              text-transform: uppercase;
+              color: #FFFFFF; }
 
 .main__questions-and-map {
   width: 100%;
-  height: 1180px;
+  height: 958px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   background: linear-gradient(180deg, rgba(24, 24, 24, 0.9) 3.47%, rgba(24, 24, 24, 0.72) 100%); }
-  .main__questions-and-map__body__headline p {
+  .main__questions-and-map__questions {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 883px;
+    height: 444px;
+    margin-top: -222px;
+    background-color: #131313;
+    background-image: url(/img/questions-background.svg); }
+    .main__questions-and-map__questions--heading {
+      margin-top: 34px;
+      font-family: 'Yeseva One';
+      font-style: normal;
+      font-weight: normal;
+      font-size: 20px;
+      line-height: 28px;
+      text-transform: uppercase;
+      color: white; }
+    .main__questions-and-map__questions--name-phone {
+      display: flex;
+      justify-content: space-between;
+      width: 520px;
+      height: 50px;
+      margin-top: 45px; }
+      .main__questions-and-map__questions--name-phone--element {
+        width: 231px; }
+        .main__questions-and-map__questions--name-phone--element p {
+          font-family: 'Century Gothic', 'Trebuchet MS', sans-serif;
+          font-size: 15px;
+          line-height: 20px;
+          color: rgba(255, 255, 255, 0.5); }
+        .main__questions-and-map__questions--name-phone--element--input {
+          width: 100%;
+          font-family: 'Century Gothic', 'Trebuchet MS', sans-serif;
+          font-size: 18px;
+          line-height: 24px;
+          color: white;
+          background-color: #131313;
+          border: none;
+          border-bottom: 1px solid #363636; }
+    .main__questions-and-map__questions--question {
+      width: 520px;
+      margin-top: 48px; }
+      .main__questions-and-map__questions--question p {
+        font-family: 'Century Gothic', 'Trebuchet MS', sans-serif;
+        font-size: 15px;
+        line-height: 20px;
+        color: rgba(255, 255, 255, 0.5); }
+      .main__questions-and-map__questions--question--input {
+        width: 100%;
+        font-family: 'Century Gothic', 'Trebuchet MS', sans-serif;
+        font-size: 18px;
+        line-height: 24px;
+        color: white;
+        background-color: #131313;
+        border: none;
+        border-bottom: 1px solid #363636; }
+    .main__questions-and-map__questions--checkbox {
+      display: flex;
+      align-items: center;
+      width: 408px;
+      height: 18px;
+      margin-top: 46px; }
+      .main__questions-and-map__questions--checkbox input {
+        width: 18px;
+        height: 18px; }
+      .main__questions-and-map__questions--checkbox span {
+        font-family: 'Century Gothic', 'Trebuchet MS', sans-serif;
+        font-size: 16px;
+        line-height: 22px;
+        color: #FFFFFF; }
+    .main__questions-and-map__questions--button {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 213px;
+      height: 51px;
+      background: #E3B873;
+      border: none;
+      box-shadow: 0px 15px 15px rgba(227, 184, 115, 0.15);
+      font-family: 'Century Gothic', 'Trebuchet MS', sans-serif;
+      font-size: 20px;
+      line-height: 26px;
+      text-align: center;
+      text-transform: uppercase;
+      color: #FFFFFF;
+      text-decoration: none;
+      margin-top: 50px; }
+  .main__questions-and-map__info {
+    width: 589px;
+    height: 51px;
+    margin-top: 52px;
     font-family: 'Yeseva One';
     font-style: normal;
     font-weight: normal;
@@ -548,7 +1364,18 @@
     line-height: 28px;
     text-align: center;
     text-transform: uppercase;
-    color: white; }
+    color: #E3B873; }
+    .main__questions-and-map__info a {
+      color: #E3B873;
+      text-decoration: none; }
+  .main__questions-and-map__social {
+    display: flex;
+    justify-content: space-between;
+    width: 71px;
+    height: 28px;
+    margin-top: 26px; }
+  .main__questions-and-map__map {
+    margin-top: 45px; }
 
 .footer {
   display: flex;
@@ -609,8 +1436,11 @@
   src: local("Yeseva One Regular"), local("YesevaOne-Regular"), url(https://fonts.gstatic.com/s/yesevaone/v14/OpNJno4ck8vc-xYpwWWxli1VWw.woff2) format("woff2");
   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }
 
-.body {
-  display: flex;
+html {
   width: 100%;
+  display: flex;
   flex-direction: column;
   align-items: center; }
+
+body {
+  max-width: 1440px; }

@@ -106,8 +106,9 @@ $color-selected: #E3B873;
     }
 
     &__pictures {
-        width: 846px;
+        width: 100%;
         height: 552px;
+        overflow: hidden;
         margin-left: 50px;
         margin-top: 107px;
 
@@ -162,7 +163,11 @@ $color-selected: #E3B873;
             margin-top: 45px;
 
             &--next {
-                position: relative;
+                width: 85px;
+                height: 85px;
+                position: sticky;
+                top: 260px;
+                right: 0;
             }
 
             &--2 {

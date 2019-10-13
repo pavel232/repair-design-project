@@ -11,10 +11,13 @@
 @import "layouts/_footer";
 @import "fonts/_fonts";
 
-
-.body {
-    display: flex;
+html {
     width: 100%;
+    display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+body {
+    max-width: 1440px;
 }
