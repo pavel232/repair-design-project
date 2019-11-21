@@ -10,7 +10,8 @@
         display: flex;
         flex-direction: column;
         align-items: center;
-        width: 883px;
+        width: 100%;
+        max-width: 883px;
         height: 444px;
         margin-top: -222px;
         background-color: #131313;
@@ -18,7 +19,7 @@
 
         &--heading {
             margin-top: 34px;
-            font-family: 'Yeseva One';
+            font-family: 'Yeseva One', 'Times New Roman', serif;
             font-style: normal;
             font-weight: normal;
             font-size: 20px;
@@ -30,7 +31,8 @@
         &--name-phone {
             display: flex;
             justify-content: space-between;
-            width: 520px;
+            width: 90%;
+            max-width: 520px;
             height: 50px;
             margin-top: 45px;
 
@@ -38,15 +40,15 @@
                 width: 231px;
 
                 & p {
-                    font-family: 'Century Gothic', 'Trebuchet MS', sans-serif;
+                    font-family: FuturaBookC, 'Century Gothic', sans-serif;
                     font-size: 15px;
                     line-height: 20px;
-                    color: rgba(255, 255, 255, 0.5);
+                    color: #ffffff;
                 }
 
                 &--input {
                     width: 100%;
-                    font-family: 'Century Gothic', 'Trebuchet MS', sans-serif;
+                    font-family: FuturaBookC, 'Century Gothic', sans-serif;
                     font-size: 18px;
                     line-height: 24px;
                     color: white;
@@ -58,19 +60,20 @@
         }
         
         &--question {
-            width: 520px;
+            width: 90%;
+            max-width: 520px;
             margin-top: 48px;
 
             & p {
-                font-family: 'Century Gothic', 'Trebuchet MS', sans-serif;
+                font-family: FuturaBookC, 'Century Gothic', sans-serif;
                 font-size: 15px;
                 line-height: 20px;
-                color: rgba(255, 255, 255, 0.5);
+                color: #ffffff;
             }
 
             &--input {
                 width: 100%;
-                font-family: 'Century Gothic', 'Trebuchet MS', sans-serif;
+                font-family: FuturaBookC, 'Century Gothic', sans-serif;
                 font-size: 18px;
                 line-height: 24px;
                 color: white;
@@ -93,7 +96,7 @@
             }
             
             & span {
-                font-family: 'Century Gothic', 'Trebuchet MS', sans-serif;
+                font-family: FuturaBookC, 'Century Gothic', sans-serif;
                 font-size: 16px;
                 line-height: 22px;
                 color: #FFFFFF;
@@ -109,7 +112,7 @@
             background: #E3B873;
             border: none;
             box-shadow: 0px 15px 15px rgba(227, 184, 115, 0.15);
-            font-family: 'Century Gothic', 'Trebuchet MS', sans-serif;
+            font-family: FuturaBookC, 'Century Gothic', sans-serif;
             font-size: 20px;
             line-height: 26px;
             text-align: center;
@@ -121,10 +124,9 @@
     }
 
     &__info {
-        width: 589px;
-        height: 51px;
+        max-width: 589px;
         margin-top: 52px;
-        font-family: 'Yeseva One';
+        font-family: 'Yeseva One', 'Times New Roman', serif;
         font-style: normal;
         font-weight: normal;
         font-size: 20px;
@@ -149,13 +151,14 @@
 
     &__map {
         margin-top: 45px;
+        width: 80%;
     }
 }
 
 @media screen and (max-width: 375px) {
     .main__questions-and-map {
         width: 375px;
-        height: 675px;
+        height: 710px;
         background-color: #131313;
 
         &__questions {
