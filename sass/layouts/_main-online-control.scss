@@ -3,7 +3,6 @@
     flex-direction: column;
     align-items: center;
     width: 100%;
-    height: 1100px;
 
     &__background {
         width: 100%;
@@ -16,7 +15,7 @@
         flex-direction: column;
         align-items: center;
         width: 100%;
-        height: 1100px;
+        height: 911px;
         margin-top: -315px;
 
         &__headline {
@@ -25,8 +24,8 @@
         }
 
         &__video {
-            width: 800px;
-            height: 425px;
+            width: 60%;
+            height: 100%;
             margin-top: 31px;
             background-image: url("/img/online-control-navigation-video.png")
         }
@@ -127,6 +126,10 @@
                 & input {
                     width: 18px;
                     height: 18px;
+                    opacity: 0;
+                    cursor: pointer;
+                    height: 0;
+                    width: 0;
                 }
             
                 & span {
@@ -140,6 +143,32 @@
     }
 }
 
+.checkmark {
+    height: 18px;
+    width: 18px;
+    margin-right: 10px;
+    background-color: #eee;
+}
+.container input:checked ~ .checkmark {
+    background-color: #E3B873;
+}
+.checkmark:after {
+    content: "";
+    display: none;
+}
+.container input:checked ~ .checkmark:after {
+    display: block;
+}
+.container .checkmark:after {
+    padding: 5 5 5 5;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    transform: rotate(45deg);
+    margin: auto;
+}
+
 @media screen and (max-width: 800px) {
     .main__online-control {
         &__background {
@@ -148,11 +177,6 @@
 
         &__navigation {
             margin-top: -250px;
-            
-            &__video {
-                width: 500px;
-                height: 266px;
-            }
 
             &__submit {
                 

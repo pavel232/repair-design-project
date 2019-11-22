@@ -12,7 +12,7 @@
         align-items: center;
         width: 100%;
         max-width: 883px;
-        height: 444px;
+        height: 460px;
         margin-top: -222px;
         background-color: #131313;
         background-image: url(/img/questions-background.svg);
@@ -86,13 +86,13 @@
         &--checkbox {
             display: flex;
             align-items: center;
-            width: 408px;
             height: 18px;
             margin-top: 46px;
 
             & input {
-                width: 18px;
-                height: 18px;
+                opacity: 0;
+                width: 0px;
+                height: 0px;
             }
             
             & span {
@@ -162,6 +162,32 @@
         margin-top: 45px;
         width: 80%;
     }
+}
+
+.checkmark {
+    height: 18px;
+    width: 18px;
+    margin-right: 10px;
+    background-color: #eee;
+}
+.container input:checked ~ .checkmark {
+    background-color: #E3B873;
+}
+.checkmark:after {
+    content: "";
+    display: none;
+}
+.container input:checked ~ .checkmark:after {
+    display: block;
+}
+.container .checkmark:after {
+    padding: 5 5 5 5;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    transform: rotate(45deg);
+    margin: auto;
 }
 
 @media screen and (max-width: 375px) {
